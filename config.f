@@ -65,7 +65,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *web[] = { "firefox", NULL };
 static const char *kpxc[] = { "keepassxc", NULL };
-//static const char *xfss[] = { "xfce4-screenshooter", NULL };
+static const char *xfss[] = { "xfce4-screenshooter", NULL };
 static const char *mine[] = { "minecraft-launcher", NULL };
 static const char *virt[] = { "virtualbox", NULL };
 
@@ -101,8 +101,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_f,	   spawn,	   {.v = web } }, //firefox keybind
 	{ MODKEY|ShiftMask,		XK_k,	   spawn, 	   {.v = kpxc } }, //keepassxc
 	{ MODKEY|ShiftMask,		XK_m,	   spawn,	   {.v = mine } },//minecraft
-	//{ MODKEY|ShiftMask, 		XK_s,	   spawn,	   {.v = xfss } },//xfce screenshooter
-	{ MODKEY, 		XK_v,	   spawn,	   {.v = virt } },//virtualbox
+	{ MODKEY|ShiftMask, 		XK_s,	   spawn,	   {.v = xfss } },//xfce screenshooter
+	{ MODKEY|ShiftMask, 		XK_v,	   spawn,	   {.v = virt } },//virtualbox
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
