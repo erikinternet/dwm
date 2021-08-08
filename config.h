@@ -63,7 +63,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *web[] = { "firefox", NULL };
+static const char *web[] = { "librewolf", NULL };
 static const char *kpxc[] = { "keepassxc", NULL };
 //static const char *xfss[] = { "xfce4-screenshooter", NULL };
 static const char *mine[] = { "minecraft-launcher", NULL };
@@ -98,7 +98,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	//CUSTOM KEY BINDS
-	{ MODKEY|ShiftMask,		XK_f,	   spawn,	   {.v = web } }, //firefox keybind
+	{ MODKEY|ShiftMask,		XK_f,	   spawn,	   {.v = web } }, //web browser keybind
 	{ MODKEY|ShiftMask,		XK_k,	   spawn, 	   {.v = kpxc } }, //keepassxc
 	{ MODKEY|ShiftMask,		XK_m,	   spawn,	   {.v = mine } },//minecraft
 	//{ MODKEY|ShiftMask, 		XK_s,	   spawn,	   {.v = xfss } },//xfce screenshooter
