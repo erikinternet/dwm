@@ -6,7 +6,7 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 Requirements
 ------------
 Arch
-# pacman -S base-devel git libx11 libxft xorg-server xorg-xinit
+# pacman -S base-devel git libx11 libxft xorg-server xorg-xinit libxinerama
 Debian
 I'll work on this later
 
